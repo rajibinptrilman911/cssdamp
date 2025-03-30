@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: white;
+            color: black;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #163A7D;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .navbar .website-name {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .navbar a:hover {
+            color: #FFD700;
+        }
+        .hero {
+            background-color: #1E5CA6;
+            color: white;
+            padding: 120px 50px 80px;
+        }
+        .hero img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 5px solid white;
+        }
+        .hero h1 {
+            font-size: 40px;
+            margin-top: 10px;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .content {
+            padding: 60px 10% 80px;
+            background-color: white;
+            color: black;
+        }
+        .section {
+            margin-bottom: 50px;
+            padding: 40px;
+            background: #F8F9FA;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        .section img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+        h2 {
+            color: #163A7D;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://th.bing.com/th/id/OIP.-QE_AsFldxQxJQR_yDuabwHaHa?pid=ImgDet&w=195&h=195&c=7" alt="Logo">
+            <div class="website-name">My Portfolio</div>
+        </div>
+        <div class="menu">
+            <a onclick="showSection('pendidikan')">Pendidikan</a>
+            <a onclick="showSection('softskill')">Softskill</a>
+            <a onclick="showSection('kontak')">Kontak</a>
+        </div>
+    </nav>
+    <div class="hero">
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQEpwcWBs_YNNQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1724688669356?e=2147483647&v=beta&t=zl1N0JngHqjGyTez5T9VmTDZIL6aK9HbAOAfW-2n3uw" alt="Foto Profil" alt="Foto Profil">
+        <h1>Saya Rajibin Putra Ilman</h1>
+        <p>Salam Hangat Dari Saya dan Semoga Kamu Sehat Selalu</p>
+    </div>
+    <div class="content">
+        <div id="pendidikan" class="section">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" alt="Pendidikan">
+            <h2>Pendidikan</h2>
+            <p>Saya adalah mahasiswa Sistem Informasi di Universitas Brawijaya.</p>
+        </div>
+        <div id="softskill" class="section">
+            <img src="https://cdn-icons-png.flaticon.com/128/2502/2502399.png" alt="Softskill">
+            <h2>Softskill</h2>
+            <p>Kemampuan saya mencakup css, html, dan desain web.</p>
+        </div>
+        <div id="kontak" class="section">
+            <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Kontak">
+            <h2>Kontak</h2>
+            <p>Email: rajibinputrailman@gmail.com</p>
+            <p>Instagram: @rajibinptrilman</p>
+        </div>
+    </div>
+</body>
+</html>
